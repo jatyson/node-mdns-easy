@@ -4,6 +4,7 @@
   "description": "Node.JS MDNS that just works regardless of OS level dependencies",
   "main": "dist/mdns.js",
   "scripts": {
+    "prepare": "npm run compile",
     "compile": "babel src --presets=es2015 --out-dir dist",
     "prepublish": "npm run compile",
     "test": "eslint src"
